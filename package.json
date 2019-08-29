@@ -1,0 +1,23 @@
+{
+  "name": "react-examples",
+  "version": "0.3.0",
+  "description": "Examples based on the React Quickly book by Azat Mardan.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aegomez/react-examples.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aegomez/react-examples/issues"
+  },
+  "homepage": "https://github.com/aegomez/react-examples#readme"
+}
