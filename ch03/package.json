@@ -5,7 +5,8 @@
   "scripts": {
     "check-types": "tsc",
     "build": "../node_modules/.bin/babel src -d public/js --extensions \".ts,.tsx\"",
-    "server": "npx static public"
+    "build-win": "..\\node_modules\\.bin\\babel src -d public\\js --extensions \".ts,.tsx\"",
+    "start": "node server.js"
   },
   "babel": {
     "presets": [
