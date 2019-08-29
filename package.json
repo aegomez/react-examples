@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/aegomez/react-examples/issues"
   },
-  "homepage": "https://github.com/aegomez/react-examples#readme"
+  "homepage": "https://github.com/aegomez/react-examples#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "node-static": "^0.7.11"
+  }
 }
