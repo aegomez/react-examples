@@ -1,0 +1,19 @@
+{
+  "name": "react-states",
+  "version": "1.0.0",
+  "description": "React component states",
+  "scripts": {
+    "check-types": "tsc",
+    "build-clock": "../node_modules/.bin/babel clock/tsx -d clock/js --extensions \".ts,.tsx\"",
+    "build-clock-win": "..\\node_modules\\.bin\\babel clock\\tsx -d clock\\js --extensions \".ts,.tsx\"",
+    "start": "node server.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ]
+  },
+  "author": "Adrian Gomez",
+  "license": "MIT"
+}

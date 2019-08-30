@@ -33,8 +33,11 @@ npm run check-types
 - Build js files via Babel:
 ```
 npm run build
+
+npm run build-app1
+npm run build-app2
 ```
-> In Windows try `npm run build-win` instead, to avoid some invalid path syntaxes such as `'../*'`. Alternatively, configure [npm's script-shell](https://docs.npmjs.com/misc/config#script-shell) option to use a compatible shell (git-bash) when calling `npm run-script`, instead of cmd.
+> In Windows try `npm run build*-win` instead, to avoid some invalid path syntaxes such as `'../*'`. Alternatively, configure [npm's script-shell](https://docs.npmjs.com/misc/config#script-shell) option to use a compatible shell (git-bash) when calling `npm run-script`, instead of cmd.
 
 - Run a small static server:
 ```
