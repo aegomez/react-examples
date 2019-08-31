@@ -6,6 +6,8 @@
     "check-types": "tsc",
     "build-clock": "../node_modules/.bin/babel clock/tsx -d clock/js --extensions \".ts,.tsx\"",
     "build-clock-win": "..\\node_modules\\.bin\\babel clock\\tsx -d clock\\js --extensions \".ts,.tsx\"",
+    "build-clock-analog-digital": "../node_modules/.bin/babel clock-analog-digital/tsx -d clock-analog-digital/js --extensions \".ts,.tsx\"",
+    "build-clock-analog-digital-win": "..\\node_modules\\.bin\\babel clock-analog-digital\\tsx -d clock-analog-digital\\js --extensions \".ts,.tsx\"",
     "start": "node server.js"
   },
   "babel": {
