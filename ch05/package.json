@@ -1,0 +1,20 @@
+{
+  "name": "react-lifecycle-events",
+  "version": "1.0.0",
+  "description": "React component lifecycle events",
+  "scripts": {
+    "check-types": "tsc",
+    "build-logger": "../node_modules/.bin/babel src/public/logger -d dist/public/logger --extensions \".ts,.tsx\" --copy-files",
+    "build-logger-win": "..\\node_modules\\.bin\\babel src\\public\\logger -d dist\\public\\logger --extensions \".ts,.tsx\" --copy-files",
+    "start": "node dist/server.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ]
+  },
+  "type": "module",
+  "author": "Adrian Gomez",
+  "license": "MIT"
+}
