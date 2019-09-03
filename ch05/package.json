@@ -4,9 +4,11 @@
   "description": "React component lifecycle events",
   "scripts": {
     "check-types": "tsc",
-    "build-logger": "../node_modules/.bin/babel src/public/logger -d dist/public/logger --extensions \".ts,.tsx\" --copy-files",
-    "build-logger-win": "..\\node_modules\\.bin\\babel src\\public\\logger -d dist\\public\\logger --extensions \".ts,.tsx\" --copy-files",
-    "start": "node dist/server.js"
+    "build-logger": "../node_modules/.bin/babel logger/tsx -d logger/js --extensions \".ts,.tsx\"",
+    "build-logger-win": "..\\node_modules\\.bin\\babel logger\\tsx -d logger\\js --extensions \".ts,.tsx\"",
+    "build-users": "../node_modules/.bin/babel users/tsx -d users/js --extensions \".ts,.tsx\"",
+    "build-users-win": "..\\node_modules\\.bin\\babel users\\tsx -d users\\js --extensions \".ts,.tsx\"",
+    "start": "node server.js"
   },
   "babel": {
     "presets": [
