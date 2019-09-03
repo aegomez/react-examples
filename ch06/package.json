@@ -8,6 +8,8 @@
     "build-onclick-win": "..\\node_modules\\.bin\\babel onclick\\tsx -d onclick\\js --extensions \".ts,.tsx\"",
     "build-onclick-props": "../node_modules/.bin/babel onclick-props/tsx -d onclick-props/js --extensions \".ts,.tsx\"",
     "build-onclick-props-win": "..\\node_modules\\.bin\\babel onclick-props\\tsx -d onclick-props\\js --extensions \".ts,.tsx\"",
+    "build-radio": "../node_modules/.bin/babel radio/tsx -d radio/js --extensions \".ts,.tsx\"",
+    "build-radio-win": "..\\node_modules\\.bin\\babel radio\\tsx -d radio\\js --extensions \".ts,.tsx\"",
     "start": "node server.js"
   },
   "babel": {
