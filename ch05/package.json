@@ -8,6 +8,8 @@
     "build-logger-win": "..\\node_modules\\.bin\\babel logger\\tsx -d logger\\js --extensions \".ts,.tsx\"",
     "build-users": "../node_modules/.bin/babel users/tsx -d users/js --extensions \".ts,.tsx\"",
     "build-users-win": "..\\node_modules\\.bin\\babel users\\tsx -d users\\js --extensions \".ts,.tsx\"",
+    "build-note": "../node_modules/.bin/babel xnote/tsx -d xnote/js --extensions \".ts,.tsx\"",
+    "build-note-win": "..\\node_modules\\.bin\\babel xnote\\tsx -d xnote\\js --extensions \".ts,.tsx\"",
     "start": "node server.js"
   },
   "babel": {
