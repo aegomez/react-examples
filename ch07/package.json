@@ -1,0 +1,20 @@
+{
+  "name": "react-forms",
+  "version": "1.0.0",
+  "description": "Working with forms in React",
+  "scripts": {
+    "check-types": "tsc",
+    "build-elements": "../node_modules/.bin/babel elements/tsx -d elements/js --extensions \".ts,.tsx\"",
+    "build-elements-win": "..\\node_modules\\.bin\\babel elements\\tsx -d elements\\js --extensions \".ts,.tsx\"",
+    "start": "node server.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ]
+  },
+  "type": "module",
+  "author": "Adrian Gomez",
+  "license": "MIT"
+}
