@@ -11,10 +11,11 @@ class Content extends React.Component {
     this.state = {
       description: `With the right pattern, applications will be more scalable and easier to maintain.
       If you aspire one day to become a Node.js architect (or maybe you're already one and want to extend your knowledge), this presentation is for you.`,
+      // set the default checked radio button
       radioGroup: {
         angular: false,
         react: true,
-        polymer: true
+        polymer: false
       },
       checkboxGroup: {
         node: false,
@@ -22,12 +23,15 @@ class Content extends React.Component {
         express: false,
         mongodb: false
       },
+      // set drop-down menu's preselected value
       selectedValue: 'node'
     };
   }
 
   handleRadio(event) {
-    let obj = {};
+    // erase other radios
+    let obj = {}; // get a boolean that indicates wheter this radio button is selected
+
     obj[event.target.value] = event.target.checked;
     this.setState({
       radioGroup: obj
@@ -35,7 +39,9 @@ class Content extends React.Component {
   }
 
   handleCheckbox(event) {
-    let obj = this.state.checkboxGroup;
+    // clone the previous state to avoid potential conflicts
+    let obj = Object.assign(this.state.checkboxGroup); // merge the previous state with the new checkbox value
+
     obj[event.target.value] = event.target.checked;
     this.setState({
       checkboxGroup: obj
@@ -89,7 +95,8 @@ class Content extends React.Component {
     }), React.createElement("hr", null), React.createElement("h2", null, "input: password"), React.createElement("input", {
       type: "password",
       defaultValue: "123456",
-      onChange: this.handleChange,
+      onChange: this.handleChange // preferred event handler
+      ,
       onInput: this.handleInput
     }), React.createElement("hr", null), React.createElement("h2", null, "input: radio"), React.createElement("label", null, React.createElement("input", {
       type: "radio",
@@ -135,10 +142,15 @@ class Content extends React.Component {
       onChange: this.handleCheckbox
     }), "MongoDB"), React.createElement("hr", null), React.createElement("textarea", {
       name: "description",
-      defaultValue: this.state.description,
+      cols: 30,
+      rows: 10,
+      defaultValue: this.state.description // avoid setting the value as inner HTML/text
+      ,
       onChange: this.handleChange
     }), React.createElement("hr", null), React.createElement("textarea", {
       name: "description1",
+      cols: 30,
+      rows: 10,
       defaultValue: "Pro Express.js is for the reader\nwho wants to quickly get up-to-speed with Express.js,\nthe fleixible Node.js framework",
       onChange: this.handleChange
     }), React.createElement("hr", null), React.createElement("select", {
@@ -170,7 +182,8 @@ class Content extends React.Component {
     }), React.createElement("hr", null), React.createElement("input", {
       type: "text",
       name: "title",
-      value: "Mr."
+      value: "Mr.",
+      readOnly: true
     })));
   }
 

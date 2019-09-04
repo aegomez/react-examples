@@ -26,10 +26,11 @@ class Content extends React.Component<FormProps, FormState> {
     this.state = {
       description: `With the right pattern, applications will be more scalable and easier to maintain.
       If you aspire one day to become a Node.js architect (or maybe you're already one and want to extend your knowledge), this presentation is for you.`,
+      // set the default checked radio button
       radioGroup: {
         angular: false,
         react: true,
-        polymer: true
+        polymer: false
       },
       checkboxGroup: {
         node: false,
@@ -37,12 +38,15 @@ class Content extends React.Component<FormProps, FormState> {
         express: false,
         mongodb: false
       },
+      // set drop-down menu's preselected value
       selectedValue: 'node'
     };
   }
 
   handleRadio(event: React.ChangeEvent<HTMLInputElement>) {
+    // erase other radios
     let obj = {} as FormState['radioGroup'];
+    // get a boolean that indicates wheter this radio button is selected
     obj[event.target.value as RadioGroup] = event.target.checked;
     this.setState({
       radioGroup: obj
@@ -50,7 +54,9 @@ class Content extends React.Component<FormProps, FormState> {
   }
 
   handleCheckbox(event: React.ChangeEvent<HTMLInputElement>) {
-    let obj = this.state.checkboxGroup;
+    // clone the previous state to avoid potential conflicts
+    let obj = Object.assign(this.state.checkboxGroup);
+    // merge the previous state with the new checkbox value
     obj[event.target.value as CheckboxGroup] = event.target.checked;
     this.setState({
       checkboxGroup: obj
@@ -111,7 +117,7 @@ class Content extends React.Component<FormProps, FormState> {
         <h2>input: password</h2>
         <input type="password"
           defaultValue="123456"
-          onChange={this.handleChange}
+          onChange={this.handleChange} // preferred event handler
           onInput={this.handleInput} />
         <hr/>
 
@@ -184,14 +190,18 @@ class Content extends React.Component<FormProps, FormState> {
 
         <textarea
           name="description"
-          defaultValue={this.state.description}
+          cols={30} rows={10}
+          defaultValue={this.state.description}  // avoid setting the value as inner HTML/text
           onChange={this.handleChange} />
         <hr/>
         <textarea
           name="description1"
+          cols={30} rows={10}
           defaultValue={"Pro Express.js is for the reader\nwho wants to quickly get up-to-speed with Express.js,\nthe fleixible Node.js framework"}
           onChange={this.handleChange} />
         <hr/>
+        
+        {/* render a drop-down menu */}
         <select
           value={this.state.selectedValue}
           onChange={this.handleSelectChange}>
@@ -200,6 +210,7 @@ class Content extends React.Component<FormProps, FormState> {
           <option value="python">Python</option>
         </select>
         <hr/>
+        {/* render a multiselect element with 2 preselects */}
         <select
           multiple={true}
           defaultValue={['meteor', 'react']}>
@@ -220,7 +231,7 @@ class Content extends React.Component<FormProps, FormState> {
           defaultValue="Send"
           onClick={this.handleSubmit} />
         <hr/>
-        <input type="text" name="title" value="Mr."/>
+        <input type="text" name="title" value="Mr." readOnly/>
       </form>
     </div>
   }
