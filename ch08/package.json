@@ -1,0 +1,20 @@
+{
+  "name": "scaling-react",
+  "version": "1.0.0",
+  "description": "Scaling React components",
+  "scripts": {
+    "check-types": "tsc",
+    "build-default-props": "../node_modules/.bin/babel default-props/tsx -d default-props/js --extensions \".ts,.tsx\"",
+    "build-default-props-win": "..\\node_modules\\.bin\\babel default-props\\tsx -d default-props\\js --extensions \".ts,.tsx\"",
+    "start": "node server.js"
+  },
+  "babel": {
+    "comments": false,
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ]
+  },
+  "author": "Adrian Gomez",
+  "license": "MIT"
+}
