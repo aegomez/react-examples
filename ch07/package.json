@@ -6,6 +6,8 @@
     "check-types": "tsc",
     "build-elements": "../node_modules/.bin/babel elements/tsx -d elements/js --extensions \".ts,.tsx\"",
     "build-elements-win": "..\\node_modules\\.bin\\babel elements\\tsx -d elements\\js --extensions \".ts,.tsx\"",
+    "build-account": "../node_modules/.bin/babel account/tsx -d account/js --extensions \".ts,.tsx\"",
+    "build-account-win": "..\\node_modules\\.bin\\babel account\\tsx -d account\\js --extensions \".ts,.tsx\"",
     "start": "node server.js"
   },
   "babel": {
