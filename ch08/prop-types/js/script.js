@@ -1,0 +1,1 @@
+ReactDOM.render(React.createElement(Content2, null), document.getElementById('content'));

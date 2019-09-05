@@ -6,6 +6,8 @@
     "check-types": "tsc",
     "build-default-props": "../node_modules/.bin/babel default-props/tsx -d default-props/js --extensions \".ts,.tsx\"",
     "build-default-props-win": "..\\node_modules\\.bin\\babel default-props\\tsx -d default-props\\js --extensions \".ts,.tsx\"",
+    "build-prop-types": "../node_modules/.bin/babel prop-types/tsx -d prop-types/js --extensions \".ts,.tsx\"",
+    "build-prop-types-win": "..\\node_modules\\.bin\\babel prop-types\\tsx -d prop-types\\js --extensions \".ts,.tsx\"",
     "start": "node server.js"
   },
   "babel": {
