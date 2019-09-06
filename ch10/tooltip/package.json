@@ -1,0 +1,27 @@
+{
+  "name": "react-tooltip-component",
+  "version": "1.0.0",
+  "description": "Project: React Tooltip Component",
+  "scripts": {
+    "build": "babel tsx -d js --extensions \".ts,.tsx\"",
+    "check-types": "tsc",
+    "start": "static",
+    "copy": "cp node_modules/react/umd/react.production.min.js menu-plus/react.js && cp node_modules/react-dom/umd/react-dom.production.min.js menu-plus/react-dom.js"
+  },
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "node-static": "^0.7.11"
+  },
+  "babel": {
+    "comments": false,
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ]
+  }
+}
