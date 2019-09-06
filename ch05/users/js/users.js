@@ -19,7 +19,22 @@ class Users extends React.Component {
       className: "table-striped table-condensed table table-bordered table-hover"
     }, React.createElement("tbody", null, this.state.users.map(user => React.createElement("tr", {
       key: user.id
-    }, React.createElement("td", null, user.first_name, " ", user.last_name), React.createElement("td", null, user.email), React.createElement("td", null, user.ip_address))))));
+    }, React.createElement("td", null, user.first_name, " ", user.last_name), React.createElement("td", null, user.email), React.createElement("td", null, user.ip_address))))), React.createElement("button", {
+      onClick: this.handleClick
+    }, "Click"));
   }
 
+  handleClick = event => {
+    let user = {
+      id: 999,
+      first_name: 'John',
+      last_name: 'Smith',
+      email: 'foo@acme.com',
+      gender: 'undefined',
+      ip_address: '123'
+    };
+    this.setState({
+      users: [...this.state.users, user]
+    });
+  };
 }

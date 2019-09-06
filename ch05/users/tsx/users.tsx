@@ -42,6 +42,21 @@ class Users extends React.Component<UserData, UserList> {
           </tr>)}
         </tbody>
       </table>
+
+      <button onClick={this.handleClick}>Click</button>
      </div>
+  }
+  handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    let user: User = {
+      id: 999,
+      first_name: 'John',
+      last_name: 'Smith',
+      email: 'foo@acme.com',
+      gender: 'undefined',
+      ip_address: '123'
+    }
+    this.setState({
+      users: [...this.state.users, user]
+    })
   }
 }
