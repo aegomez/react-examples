@@ -4,12 +4,15 @@
   "description": "Scaling React components",
   "scripts": {
     "check-types": "tsc",
+    "build": "..\\node_modules\\.bin\\babel --extensions \".ts,.tsx\"",
     "build-default-props": "../node_modules/.bin/babel default-props/tsx -d default-props/js --extensions \".ts,.tsx\"",
     "build-default-props-win": "..\\node_modules\\.bin\\babel default-props\\tsx -d default-props\\js --extensions \".ts,.tsx\"",
     "build-prop-types": "../node_modules/.bin/babel prop-types/tsx -d prop-types/js --extensions \".ts,.tsx\"",
     "build-prop-types-win": "..\\node_modules\\.bin\\babel prop-types\\tsx -d prop-types\\js --extensions \".ts,.tsx\"",
     "build-children": "../node_modules/.bin/babel children/tsx -d children/js --extensions \".ts,.tsx\"",
     "build-children-win": "..\\node_modules\\.bin\\babel children\\tsx -d children\\js --extensions \".ts,.tsx\"",
+    "build-hi-order": "npm run build -- hi-order/tsx -d hi-order/js",
+    "build-hi-order-win": "npm run build -- hi-order\\tsx -d hi-order\\js",
     "start": "node server.js"
   },
   "babel": {
