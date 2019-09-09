@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Project: React Timer Component",
   "scripts": {
-    "build": "babel tsx -d js --extensions \".ts,.tsx\"",
+    "build": "babel tsx -o js/timer.js --extensions \".ts,.tsx\"",
     "check-types": "tsc",
     "start": "static"
   },

@@ -5,8 +5,7 @@
   "scripts": {
     "build": "babel tsx -d js --extensions \".ts,.tsx\"",
     "check-types": "tsc",
-    "start": "static",
-    "copy": "cp node_modules/react/umd/react.production.min.js menu-plus/react.js && cp node_modules/react-dom/umd/react-dom.production.min.js menu-plus/react-dom.js"
+    "start": "static"
   },
   "author": "Adrian Gomez",
   "license": "MIT",

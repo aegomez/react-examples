@@ -31,13 +31,13 @@ class Tooltip extends React.Component {
       top: (this.state.top || 0) + vOffset,
       left: (this.state.left || 0) + hOffset
     };
-    const spanProps = {};
+    const handlers = {};
 
     if (trigger === 'hover') {
-      spanProps.onMouseEnter = this.toggle;
-      spanProps.onMouseOut = this.toggle;
+      handlers.onMouseEnter = this.toggle;
+      handlers.onMouseOut = this.toggle;
     } else if (trigger === 'click') {
-      spanProps.onClick = this.toggle;
+      handlers.onClick = this.toggle;
     }
 
     return React.createElement("div", {
@@ -48,7 +48,7 @@ class Tooltip extends React.Component {
       style: {
         color: 'blue'
       }
-    }, spanProps), this.props.children), React.createElement("div", {
+    }, handlers), this.props.children), React.createElement("div", {
       className: "tooltip bs-tooltip-" + placement,
       style: style,
       role: "tooltip"
