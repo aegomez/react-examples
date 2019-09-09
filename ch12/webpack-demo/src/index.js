@@ -8,7 +8,7 @@ function component() {
   const element = document.createElement('div');
   const btn = document.createElement('button');
 
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  element.innerHTML = _.join(['Hello', 'webpack', 'dev', 'modo'], ' ');
   element.classList.add('hello');
 
   // Add the image to the existing div
@@ -17,7 +17,7 @@ function component() {
 
   element.appendChild(myIcon);
 
-  btn.textContent = 'Click me and check the console!';
+  btn.textContent = 'Click me and check console!';
   btn.onclick = printMe;
 
   element.appendChild(btn);
