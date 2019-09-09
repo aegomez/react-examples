@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'raleway';
+  src: url('./Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hello {
+  color: red;
+  font-family: 'raleway', monospace;
+  background: url('./icon.png');
+}
