@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "es2015",
     "jsx": "preserve",
     "sourceMap": true,
     "removeComments": false,
@@ -16,7 +16,6 @@
     "preserveConstEnums": true
   },
   "include": [
-    "./@types",
     "./tsx"
   ]
 }

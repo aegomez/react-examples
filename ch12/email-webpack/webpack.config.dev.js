@@ -4,33 +4,41 @@ const path = require('path');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const webpack = require('webpack');
 
-/** @type {webpack.RuleSetUse} */
-const babelLoader = {
-  loader: 'babel-loader',
-  options: {
-    "presets": [
-      "@babel/preset-react"
-    ]
-  }
-};
-
 /** @type {webpack.Configuration} */
 const config = {
+  mode: 'development',
   cache: true,
-  // context: __dirname,
+  context: __dirname,
   entry: './tsx/app.tsx',
   output: {
+    publicPath: 'js/',
     path: path.join(__dirname, '/js'),
     filename: 'bundle.js'
   },
-  devtool: '#source-map',
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
+  },
   module: {
     rules: [
       {
         test: /\.ts(x?)$/,
-        exclude: /node_modules/,
+        include: /tsx/,
         use: [
-          babelLoader,
+          {
+            loader: 'babel-loader',
+            options: {
+              babelrc: false,
+              presets: [
+                '@babel/preset-react'
+              ],
+              plugins: [
+                'react-hot-loader/babel'
+              ]
+            }
+          },
           {
             loader: 'ts-loader',
             options: {
@@ -41,23 +49,22 @@ const config = {
         ]
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          babelLoader
-        ]
-      },
-      {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
-      },
+        exclude: '/node_modules/',
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
     ]
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin()
   ],
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './',
+    hot: true
   }
 };
 

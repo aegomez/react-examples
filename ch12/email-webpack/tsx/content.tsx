@@ -1,6 +1,7 @@
-import React = require('react');
+import { hot } from 'react-hot-loader/root';
+import * as React from 'react';
 
-class Content extends React.Component {
+class Content extends React.Component<{}> {
   public prompt: string;
   public emailAddress: React.RefObject<HTMLInputElement>;
   public comments: React.RefObject<HTMLTextAreaElement>;
@@ -30,7 +31,7 @@ class Content extends React.Component {
             placeholder='foo@acme.org'/>
         </div>
         <div className="form-group">
-          Comments: <textarea
+          Comment: <textarea
             ref={this.comments}
             className='form-control'
             placeholder='I like your website'/>
@@ -45,4 +46,5 @@ class Content extends React.Component {
   }
 }
 
-export = Content;
+// export default Content;
+export default hot(Content);
