@@ -1,0 +1,36 @@
+{
+  "name": "email-webpack",
+  "version": "1.0.0",
+  "description": "The Webpack build tool",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "server": "webpack-dev-server --config webpack.config.dev.js",
+    "server-cli": "webpack-dev-server --inline --hot --module-bind \"css=style-loader!css-loader\" --module-bind \"'tsx=react-hot-loader!babel-loader\" --config webpack.config.dev-cli.js"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "typescript"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/webpack": "^4.39.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.12",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
