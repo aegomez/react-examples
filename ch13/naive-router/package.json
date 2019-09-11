@@ -1,0 +1,28 @@
+{
+  "name": "naive-router",
+  "version": "1.0.0",
+  "description": "Implementing a naive react router",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "typescript"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  }
+}
