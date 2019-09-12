@@ -1,0 +1,36 @@
+{
+  "name": "testing-react-router",
+  "version": "1.0.0",
+  "description": "Testing React Router",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "react",
+    "react-router",
+    "typescript",
+    "webpack"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^4.3.5",
+    "babel-loader": "^8.0.6",
+    "express": "^4.17.1",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.3",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  }
+}
