@@ -1,0 +1,29 @@
+{
+  "name": "testutils-demo",
+  "version": "2.0.0",
+  "description": "Jest simple test + TestUtils",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aegomez/react-examples.git"
+  },
+  "keywords": [
+    "jest",
+    "test-utils"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
