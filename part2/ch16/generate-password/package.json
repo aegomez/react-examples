@@ -1,0 +1,26 @@
+{
+  "name": "generate-password",
+  "version": "1.0.0",
+  "description": "Jest simple test",
+  "main": "generate-password.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node -e \"console.log(require('./generate-password.js')())\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aegomez/react-examples.git"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aegomez/react-examples/issues"
+  },
+  "homepage": "https://github.com/aegomez/react-examples#readme",
+  "devDependencies": {
+    "jest-cli": "^24.9.0"
+  }
+}
