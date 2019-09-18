@@ -1,7 +1,7 @@
 {
-  "name": "react-examples",
-  "version": "0.3.0",
-  "description": "Examples based on the React Quickly book by Azat Mardan.",
+  "name": "react-foundation",
+  "version": "0.8.0",
+  "description": "Part 1: React foundation",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +16,6 @@
   ],
   "author": "Adrian Gomez",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aegomez/react-examples/issues"
-  },
-  "homepage": "https://github.com/aegomez/react-examples#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
