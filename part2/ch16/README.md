@@ -6,4 +6,8 @@ Jest basics: describe and test/it.
 
 ## 2. [testutils](testutils)
 
-ReactDOM/TestUtils
+ReactDOM/TestUtils.
+
+## 3. [password](password)
+
+UI testing.

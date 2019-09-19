@@ -1,0 +1,38 @@
+{
+  "name": "password-ui-testing",
+  "version": "1.0.0",
+  "description": "UI testing with Jest + ts-jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "build-watch": "webpack -w",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aegomez/react-examples.git"
+  },
+  "keywords": [
+    "jest",
+    "ts-jest"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-test-renderer": "^16.9.0",
+    "jest": "^24.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-test-renderer": "^16.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.1.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
