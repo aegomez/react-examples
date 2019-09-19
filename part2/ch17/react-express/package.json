@@ -1,0 +1,40 @@
+{
+  "name": "react-express",
+  "version": "1.0.0",
+  "description": "Render an HTML page on the server from React components",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aegomez/react-examples.git"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "express",
+    "handlebars"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "dependencies": {
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/errorhandler": "0.0.32",
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.7.5",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=3.6.2"
+  }
+}
