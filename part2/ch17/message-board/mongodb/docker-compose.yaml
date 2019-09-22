@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  mongo:
+    image: mongo
+    container_name: mongo-x
+    ports:
+      - '27017:27017'
+    restart: always
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+volumes:
+  mongodb:
+    name: mongodb
+  mongodb_config:
+    name: mongodb_config
