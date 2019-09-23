@@ -1,0 +1,39 @@
+{
+  "name": "nile-bookstore",
+  "version": "1.0.0",
+  "description": "A sample project with React Router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build-watch": "webpack -w",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aegomez/react-examples.git"
+  },
+  "keywords": [
+    "react",
+    "react-router",
+    "typescript",
+    "webpack"
+  ],
+  "author": "Adrian Gomez",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^4.3.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "ts-loader": "^6.1.2",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "peerDependencies": {
+    "typescript": "^3.6.2"
+  }
+}
